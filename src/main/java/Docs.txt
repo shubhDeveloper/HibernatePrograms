@@ -1,0 +1,20 @@
+    
+    Basic Annotations in hibernate ---
+
+* 	@Entity - Use to mark any class as Entity.
+
+*   @Table  - Use to change the table details.
+
+*   @Id     - Use to mark column as id (primary key). 
+
+*   @GenetatedValue - Hibernate will automatically generate values for that using an internal sequence .Therefor- 
+                      we dont have to set it manually 
+                      
+*   @Column - Used to change the column name in our database table.
+
+
+*   @Transient - This tells hibernate not to save this field.
+
+*   @Temporal(TemporalType.Date) - Use to formate data in our table 
+
+*   @Lob = use to make large object                    
