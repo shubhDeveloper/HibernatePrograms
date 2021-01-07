@@ -13,6 +13,7 @@ public class StudentData {
 	public String name;
 	public String city;
 	public String school;
+	public Certificate certi;
 
 	public int getId() {
 		return id;
@@ -46,6 +47,15 @@ public class StudentData {
 		this.school = school;
 	}
 	
+	
+
+	public Certificate getCerti() {
+		return certi;
+	}
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
 
 	public StudentData(int id, String name, String city, String school) {
 		super();

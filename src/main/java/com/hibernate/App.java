@@ -10,6 +10,7 @@ import org.hibernate.cfg.Configuration;
 
 
 import com.hibernate.entity.Address;
+import com.hibernate.entity.StudentData;
 
 
 
@@ -33,16 +34,16 @@ public class App {
 //		save student data into tables using getters and setters::::::::::::::::::::::::::
 		
 		StudentData std = new StudentData();
-		std.setId(124);
-		std.setName("vikas");
-		std.setCity("shujalpur");
-		std.setSchool("excellence");
+		std.setId(126);
+		std.setName("rahul");
+		std.setCity("kalapipal");
+		std.setSchool("sahara");
 		
 		***/
 //	    save address :::::::::::::::::::::::::::::::
-		
+	
 		Address add= new Address();
-		add.setStreet("kajipura");
+		add.setStreet("ward no 5");
 		add.setCity("shujalpur");
 		add.setOpen(true);
 		add.setAddedDate(new Date());
