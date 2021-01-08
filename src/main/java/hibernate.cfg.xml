@@ -22,7 +22,9 @@
 		<mapping class="com.hibernate.entity.StudentData" />
 		<mapping class="com.hibernate.entity.Address" />
 		<mapping class="com.one_to_one_map.Answer" />
-		<mapping class="com.one_to_one_map.Question" />
+		<mapping class="com.one_to_one_map.Question" /> 
+		<mapping class="com.one_to_many.Employee" /> 
+		<mapping class="com.one_to_many.Company" /> 
 	
 	
 	</session-factory>
