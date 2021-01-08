@@ -21,6 +21,8 @@
 		<property name="formate_sql">true</property>
 		<mapping class="com.hibernate.entity.StudentData" />
 		<mapping class="com.hibernate.entity.Address" />
+		<mapping class="com.one_to_one_map.Answer" />
+		<mapping class="com.one_to_one_map.Question" />
 	
 	
 	</session-factory>
