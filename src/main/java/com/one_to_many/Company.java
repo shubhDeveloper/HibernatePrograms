@@ -17,7 +17,7 @@ public class Company {
 	@Column(name = "company_name")
 	private String companyName;
 	
-	@OneToMany(mappedBy = "Company")
+	@OneToMany(mappedBy = "company")
 	private List<Employee> employees;
 
 	public List<Employee> getEmployees() {

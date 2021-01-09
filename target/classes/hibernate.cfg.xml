@@ -25,6 +25,8 @@
 		<mapping class="com.one_to_one_map.Question" /> 
 		<mapping class="com.one_to_many.Employee" /> 
 		<mapping class="com.one_to_many.Company" /> 
+		<mapping class="com.many_to_many.Projects" /> 
+		<mapping class="com.many_to_many.Employees" /> 
 	
 	
 	</session-factory>
