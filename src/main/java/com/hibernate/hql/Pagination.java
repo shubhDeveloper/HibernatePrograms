@@ -24,7 +24,7 @@ public class Pagination {
 		
 		for(Student student : list)
 		{
-			System.out.println("index : "+i+"  "+student);
+			System.out.println(student);
 		}
 		
 		
