@@ -18,19 +18,19 @@ public class One_to_Many_map {
 		
 //		create company object
 		Company com1 = new Company();
-		com1.setCompanyId(11001);
-		com1.setCompanyName("panchalTech");
+		com1.setCompanyId(112233);
+		com1.setCompanyName("lux cozy");
 		
 //		create employee object 1
 		Employee e1 = new Employee();
-		e1.setEmpId(123);
-		e1.setEmpName("shubham");
+		e1.setEmpId(127);
+		e1.setEmpName("nana");
 		e1.setCompany(com1);
 		
 //		create employee object 2
 		Employee e2 = new Employee();
-		e2.setEmpId(124);
-		e2.setEmpName("vikas");
+		e2.setEmpId(128);
+		e2.setEmpName("rakesh");
 		e2.setCompany(com1);
 		
 		List<Employee> list = new ArrayList<Employee>();

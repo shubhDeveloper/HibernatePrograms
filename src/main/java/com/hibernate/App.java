@@ -28,8 +28,6 @@ public class App {
 		
 		Configuration cfg = new Configuration().configure("hibernate.cfg.xml");
 		SessionFactory factory = cfg.buildSessionFactory();		
-
-		/***
 		
 //		save student data into tables using getters and setters::::::::::::::::::::::::::
 		
@@ -39,7 +37,7 @@ public class App {
 		std.setCity("kalapipal");
 		std.setSchool("sahara");
 		
-		***/
+		/***
 //	    save address :::::::::::::::::::::::::::::::
 	
 		Address add= new Address();
@@ -55,12 +53,12 @@ public class App {
 		fs.read(data);
 		add.setImage(data);
 		
-
+**/
 		Session session = factory.openSession();
 		Transaction transaction = session.beginTransaction();
 		
-//		session.save(std);
-		session.save(add);
+		session.save(std);
+//		session.save(add);
 		
 		transaction.commit();
 		session.close();

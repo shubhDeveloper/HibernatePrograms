@@ -16,9 +16,9 @@
 		<property name="dialect">
 			org.hibernate.dialect.MySQL8Dialect
 		</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
-		<property name="formate_sql">true</property>
+		<property name="format_sql">true</property>
 		<mapping class="com.hibernate.entity.StudentData" />
 		<mapping class="com.hibernate.entity.Address" />
 		<mapping class="com.one_to_one_map.Answer" />
@@ -26,7 +26,8 @@
 		<mapping class="com.one_to_many.Employee" /> 
 		<mapping class="com.one_to_many.Company" /> 
 		<mapping class="com.many_to_many.Projects" /> 
-		<mapping class="com.many_to_many.Employees" /> 
+		<mapping class="com.many_to_many.Employees" />
+		<mapping class="com.hibernate.hql.Student" /> 
 	
 	
 	</session-factory>

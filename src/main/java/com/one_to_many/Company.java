@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -17,7 +18,7 @@ public class Company {
 	@Column(name = "company_name")
 	private String companyName;
 	
-	@OneToMany(mappedBy = "company")
+	@OneToMany(mappedBy = "company",fetch = FetchType.EAGER)
 	private List<Employee> employees;
 
 	public List<Employee> getEmployees() {
