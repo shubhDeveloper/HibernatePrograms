@@ -2,6 +2,7 @@ package com.one_to_many;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -18,7 +19,8 @@ public class Company {
 	@Column(name = "company_name")
 	private String companyName;
 	
-	@OneToMany(mappedBy = "company",fetch = FetchType.EAGER)
+	//Cascade = with the help of cascade we dont have need of save employees objects 
+	@OneToMany(mappedBy = "company",fetch = FetchType.EAGER,cascade = CascadeType.ALL) //Using cascade
 	private List<Employee> employees;
 
 	public List<Employee> getEmployees() {
